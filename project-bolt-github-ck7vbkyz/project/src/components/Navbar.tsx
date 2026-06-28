@@ -41,14 +41,12 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20 md:h-24">
           {/* Logo */}
-          <Link to="/" className="flex items-center gap-3 group">
-            <div className="w-20 h-20 md:w-28 md:h-28 relative -my-3 flex-shrink-0 rounded-2xl overflow-hidden bg-white/[0.06] border border-white/10 p-1.5 transition-all duration-300 group-hover:bg-white/10 group-hover:border-white/20">
-              <img
-                src="/Gemini_Generated_Image_10pseu10pseu10ps-removebg-preview.png"
-                alt="WOVO"
-                className="w-full h-full object-contain"
-              />
-            </div>
+          <Link to="/" className="flex items-center group">
+            <img
+              src="/Gemini_Generated_Image_10pseu10pseu10ps-removebg-preview.png"
+              alt="WOVO"
+              className="h-12 md:h-16 w-auto object-contain logo-dark-bg"
+            />
           </Link>
 
           {/* Desktop Nav */}

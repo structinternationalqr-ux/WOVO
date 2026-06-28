@@ -6,14 +6,12 @@ export default function Footer() {
     <footer className="border-t border-white/5 bg-charcoal/50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex items-center gap-3">
-            <div className="w-20 h-20 md:w-24 md:h-24 rounded-2xl overflow-hidden bg-white/[0.05] border border-white/10 p-1.5">
-              <img
-                src="/Gemini_Generated_Image_10pseu10pseu10ps-removebg-preview.png"
-                alt="WOVO"
-                className="w-full h-full object-contain"
-              />
-            </div>
+          <div className="flex items-center">
+            <img
+              src="/Gemini_Generated_Image_10pseu10pseu10ps-removebg-preview.png"
+              alt="WOVO"
+              className="h-10 w-auto object-contain logo-dark-bg"
+            />
           </div>
 
           <div className="flex flex-col items-center gap-3">
