@@ -1,0 +1,581 @@
+{
+  "url": "http://localhost:5173/",
+  "title": "Wovo - Web Development Studio",
+  "counts": {
+    "totalLogs": 2,
+    "errors": 4,
+    "warnings": 0,
+    "logs": 0,
+    "info": 0,
+    "debug": 0
+  },
+  "allLogs": [
+    {
+      "type": "error",
+      "text": "Failed to load resource: the server responded with a status of 404 (File not found)"
+    },
+    {
+      "type": "error",
+      "text": "Failed to load resource: net::ERR_NAME_NOT_RESOLVED"
+    }
+  ],
+  "pageErrors": [
+    {
+      "type": "requestfailed",
+      "text": "https://0ec90b57d6e95fcbda19832f.supabase.co/rest/v1/visitor_logs?columns=%22page%22 - net::ERR_NAME_NOT_RESOLVED"
+    },
+    {
+      "type": "requestfailed",
+      "text": "https://0ec90b57d6e95fcbda19832f.supabase.co/rest/v1/visitor_logs?columns=%22page%22 - net::ERR_NAME_NOT_RESOLVED"
+    }
+  ],
+  "accessibility": {
+    "role": "RootWebArea",
+    "backendNodeId": 2,
+    "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+    "name": "Wovo - Web Development Studio",
+    "url": "http://localhost:5173/",
+    "children": [
+      {
+        "role": "navigation",
+        "backendNodeId": 82,
+        "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+        "name": "",
+        "children": [
+          {
+            "role": "link",
+            "backendNodeId": 27,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "WOVO",
+            "url": "http://localhost:5173/",
+            "children": [
+              {
+                "role": "image",
+                "backendNodeId": 84,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "WOVO",
+                "url": "http://localhost:5173/ChatGPT_Image_Jun_27,_2026,_03_47_15_PM%20copy%20copy.png"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 88,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Home",
+            "url": "http://localhost:5173/",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 336,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "Home"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 90,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Features",
+            "url": "http://localhost:5173/features",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 337,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "Features"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 91,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Pricing",
+            "url": "http://localhost:5173/pricing",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 338,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "Pricing"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 92,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Projects",
+            "url": "http://localhost:5173/projects",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 339,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "Projects"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 93,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Contact",
+            "url": "http://localhost:5173/contact",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 340,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "Contact"
+              }
+            ]
+          },
+          {
+            "role": "button",
+            "backendNodeId": 95,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "EN"
+          }
+        ]
+      },
+      {
+        "role": "main",
+        "backendNodeId": 108,
+        "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+        "name": "",
+        "children": [
+          {
+            "role": "StaticText",
+            "backendNodeId": 342,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Modern Web Development"
+          },
+          {
+            "role": "heading",
+            "backendNodeId": 124,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Modern Web Development, Built with Precision",
+            "level": 1
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 39,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "I craft blazing-fast, visually stunning websites with transparent processes and rapid turnaround. Your vision, engineered with precision."
+          },
+          {
+            "role": "link",
+            "backendNodeId": 6,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Explore Services",
+            "url": "http://localhost:5173/features",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 343,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "Explore Services"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 41,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "View Projects",
+            "url": "http://localhost:5173/projects",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 344,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "View Projects"
+              }
+            ]
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 345,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Fast Turnaround"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 346,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Modern Aesthetics"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 347,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Transparent Process"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 348,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Clean Code"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 349,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Scalable Architecture"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 350,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "wovo-studio.bolt.new"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 351,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "3"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 352,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Clients Served"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 353,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "92%"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 354,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Client Satisfaction"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 355,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "12h"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 356,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Response Time"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 357,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "3"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 358,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Languages"
+          },
+          {
+            "role": "heading",
+            "backendNodeId": 226,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "What We Offer",
+            "level": 2
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 360,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "A focused set of services designed to deliver results."
+          },
+          {
+            "role": "heading",
+            "backendNodeId": 235,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Web Development",
+            "level": 3
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 362,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Custom websites built with modern technologies and best practices."
+          },
+          {
+            "role": "heading",
+            "backendNodeId": 243,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "SEO Ready",
+            "level": 3
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 364,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Optimized structure to help you rank higher on search engines."
+          },
+          {
+            "role": "heading",
+            "backendNodeId": 251,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Quality First",
+            "level": 3
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 366,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Pixel-perfect implementation with attention to every detail."
+          },
+          {
+            "role": "heading",
+            "backendNodeId": 257,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Clear Communication",
+            "level": 3
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 368,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Regular updates and transparent progress throughout the project."
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 369,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "TECHNOLOGIES WE USE"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 370,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "React"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 371,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "TypeScript"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 372,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Tailwind CSS"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 373,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Next.js"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 374,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Vite"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 375,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Framer Motion"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 376,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Supabase"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 377,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Node.js"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 378,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "React"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 379,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "TypeScript"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 380,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Tailwind CSS"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 381,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Next.js"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 382,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Vite"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 383,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Framer Motion"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 384,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Supabase"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 385,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Node.js"
+          },
+          {
+            "role": "heading",
+            "backendNodeId": 285,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Ready to Start?",
+            "level": 2
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 387,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Let's turn your ideas into a stunning reality."
+          },
+          {
+            "role": "link",
+            "backendNodeId": 21,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "Let's Start",
+            "url": "http://localhost:5173/contact",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 388,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "Let's Start"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 292,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "wovo.website.developer@gmail.com",
+            "url": "mailto:wovo.website.developer@gmail.com",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 389,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "wovo.website.developer@gmail.com"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 296,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "@wovo_official",
+            "url": "https://instagram.com/wovo_official",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 390,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "@wovo_official"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "role": "contentinfo",
+        "backendNodeId": 309,
+        "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+        "name": "",
+        "children": [
+          {
+            "role": "image",
+            "backendNodeId": 314,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "WOVO",
+            "url": "http://localhost:5173/ChatGPT_Image_Jun_27,_2026,_03_47_15_PM%20copy%20copy.png"
+          },
+          {
+            "role": "link",
+            "backendNodeId": 318,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "wovo.website.developer@gmail.com",
+            "url": "mailto:wovo.website.developer@gmail.com",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 391,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "wovo.website.developer@gmail.com"
+              }
+            ]
+          },
+          {
+            "role": "link",
+            "backendNodeId": 322,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "@wovo_official",
+            "url": "https://instagram.com/wovo_official",
+            "children": [
+              {
+                "role": "StaticText",
+                "backendNodeId": 392,
+                "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+                "name": "@wovo_official"
+              }
+            ]
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 393,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "© "
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 394,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "2026"
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 395,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": " WOVO. "
+          },
+          {
+            "role": "StaticText",
+            "backendNodeId": 396,
+            "loaderId": "7FC6E6D7CF65CB5F56F44FE3FDFF7233",
+            "name": "All rights reserved."
+          }
+        ]
+      }
+    ]
+  }
+}

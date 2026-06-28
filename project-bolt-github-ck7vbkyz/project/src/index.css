@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    font-family: 'Inter', system-ui, sans-serif;
+    background-color: #0A0A0A;
+    color: #F2F2F2;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+}
+
+@layer components {
+  .glass {
+    background: rgba(30, 30, 30, 0.65);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.08);
+  }
+  .glass-strong {
+    background: rgba(18, 18, 18, 0.88);
+    backdrop-filter: blur(30px);
+    -webkit-backdrop-filter: blur(30px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  .glow-border {
+    position: relative;
+  }
+  .glow-border::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(135deg, rgba(220, 220, 220, 0.25), transparent 50%, rgba(180, 180, 180, 0.1));
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+  .text-gradient {
+    background: linear-gradient(135deg, #F2F2F2 0%, #B8B8B8 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .btn-primary {
+    @apply relative overflow-hidden px-8 py-3 rounded-lg font-medium transition-all duration-300;
+    background: linear-gradient(135deg, rgba(200, 200, 200, 0.15), rgba(180, 180, 180, 0.05));
+    border: 1px solid rgba(200, 200, 200, 0.35);
+    color: #F2F2F2;
+  }
+  .btn-primary:hover {
+    background: linear-gradient(135deg, rgba(220, 220, 220, 0.22), rgba(180, 180, 180, 0.12));
+    box-shadow: 0 0 30px rgba(200, 200, 200, 0.25);
+    transform: translateY(-2px);
+  }
+  .card-hover {
+    @apply transition-all duration-500;
+  }
+  .card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5), 0 0 30px rgba(200, 200, 200, 0.08);
+  }
+  /* Logo shown on dark background: invert dark logo + add white glow */
+  .logo-dark-bg {
+    filter: invert(1) brightness(2) drop-shadow(0 0 18px rgba(255, 255, 255, 0.45));
+    transition: filter 0.3s ease;
+  }
+  .logo-dark-bg:hover {
+    filter: invert(1) brightness(2.4) drop-shadow(0 0 28px rgba(255, 255, 255, 0.65));
+  }
+}
+
+@layer utilities {
+  .perspective-1000 {
+    perspective: 1000px;
+  }
+  .preserve-3d {
+    transform-style: preserve-3d;
+  }
+  .backface-hidden {
+    backface-visibility: hidden;
+  }
+  .rotate-x-12 {
+    transform: rotateX(12deg);
+  }
+}
