@@ -1,6 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ExternalLink, Pin, Settings, Lock, X, Check, Plus, Trash2, ImagePlus, Loader2 } from 'lucide-react';
+import { ExternalLink, Pin, Settings, Lock, X, Check, Plus, Trash2, ImagePlus, Loader as Loader2 } from 'lucide-react';
 import { supabase } from '../lib/supabase';
 
 interface Project {
@@ -43,12 +43,16 @@ export default function Projects() {
   }, []);
 
   async function fetchProjects() {
-    const { data, error } = await supabase
-      .from('projects')
-      .select('*')
-      .order('pinned', { ascending: false })
-      .order('created_at', { ascending: false });
-    if (!error && data) setProjects(data);
+    try {
+      const { data, error } = await supabase
+        .from('projects')
+        .select('*')
+        .order('pinned', { ascending: false })
+        .order('created_at', { ascending: false });
+      if (!error && data) setProjects(data);
+    } catch {
+      // Silently fail - will show empty state
+    }
     setLoading(false);
   }
 
@@ -72,16 +76,20 @@ export default function Projects() {
   }
 
   async function uploadImage(file: File): Promise<string | null> {
-    const ext = file.name.split('.').pop() ?? 'jpg';
-    const fileName = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
-    const { data, error } = await supabase.storage
-      .from('project-images')
-      .upload(fileName, file, { cacheControl: '3600', upsert: false });
-    if (error || !data) return null;
-    const { data: urlData } = supabase.storage
-      .from('project-images')
-      .getPublicUrl(data.path);
-    return urlData.publicUrl;
+    try {
+      const ext = file.name.split('.').pop() ?? 'jpg';
+      const fileName = `${Date.now()}-${Math.random().toString(36).slice(2)}.${ext}`;
+      const { data, error } = await supabase.storage
+        .from('project-images')
+        .upload(fileName, file, { cacheControl: '3600', upsert: false });
+      if (error || !data) return null;
+      const { data: urlData } = supabase.storage
+        .from('project-images')
+        .getPublicUrl(data.path);
+      return urlData.publicUrl;
+    } catch {
+      return null;
+    }
   }
 
   async function handleAddProject(e: React.FormEvent) {
@@ -93,16 +101,19 @@ export default function Projects() {
       image_url = await uploadImage(imageFile);
     }
 
-    const { error } = await supabase.from('projects').insert([{ ...formData, image_url }]);
-    setUploading(false);
-
-    if (!error) {
-      setFormData({ name: '', website_link: '', business_type: '', pricing_tier: 'Essential' });
-      setImageFile(null);
-      setImagePreview(null);
-      setShowAddForm(false);
-      fetchProjects();
+    try {
+      const { error } = await supabase.from('projects').insert([{ ...formData, image_url }]);
+      if (!error) {
+        setFormData({ name: '', website_link: '', business_type: '', pricing_tier: 'Essential' });
+        setImageFile(null);
+        setImagePreview(null);
+        setShowAddForm(false);
+        fetchProjects();
+      }
+    } catch {
+      // Silently fail
     }
+    setUploading(false);
   }
 
   function resetForm() {
@@ -113,16 +124,24 @@ export default function Projects() {
   }
 
   async function togglePin(project: Project) {
-    const { error } = await supabase
-      .from('projects')
-      .update({ pinned: !project.pinned })
-      .eq('id', project.id);
-    if (!error) fetchProjects();
+    try {
+      const { error } = await supabase
+        .from('projects')
+        .update({ pinned: !project.pinned })
+        .eq('id', project.id);
+      if (!error) fetchProjects();
+    } catch {
+      // Silently fail
+    }
   }
 
   async function deleteProject(id: string) {
-    const { error } = await supabase.from('projects').delete().eq('id', id);
-    if (!error) fetchProjects();
+    try {
+      const { error } = await supabase.from('projects').delete().eq('id', id);
+      if (!error) fetchProjects();
+    } catch {
+      // Silently fail
+    }
   }
 
   const sortedProjects = [...projects].sort((a, b) => {

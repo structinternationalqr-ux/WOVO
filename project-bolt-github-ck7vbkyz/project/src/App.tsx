@@ -36,7 +36,11 @@ function VisitorTracker() {
 
   useEffect(() => {
     async function logVisit() {
-      await supabase.from('visitor_logs').insert([{ page: location.pathname }]);
+      try {
+        await supabase.from('visitor_logs').insert([{ page: location.pathname }]);
+      } catch {
+        // Silently fail - visitor tracking is non-critical
+      }
     }
     logVisit();
   }, [location.pathname]);

@@ -47,20 +47,28 @@ export default function Settings() {
   }, [authenticated]);
 
   async function fetchProjects() {
-    const { data, error } = await supabase
-      .from('projects')
-      .select('*')
-      .order('created_at', { ascending: false });
-    if (!error && data) setProjects(data);
+    try {
+      const { data, error } = await supabase
+        .from('projects')
+        .select('*')
+        .order('created_at', { ascending: false });
+      if (!error && data) setProjects(data);
+    } catch {
+      // Silently fail
+    }
   }
 
   async function fetchLogs() {
-    const { data, error } = await supabase
-      .from('visitor_logs')
-      .select('*')
-      .order('visited_at', { ascending: false })
-      .limit(200);
-    if (!error && data) setLogs(data);
+    try {
+      const { data, error } = await supabase
+        .from('visitor_logs')
+        .select('*')
+        .order('visited_at', { ascending: false })
+        .limit(200);
+      if (!error && data) setLogs(data);
+    } catch {
+      // Silently fail
+    }
   }
 
   function handleLogin(e: React.FormEvent) {
@@ -75,25 +83,37 @@ export default function Settings() {
 
   async function handleAddProject(e: React.FormEvent) {
     e.preventDefault();
-    const { error } = await supabase.from('projects').insert([formData]);
-    if (!error) {
-      setFormData({ name: '', website_link: '', business_type: '', pricing_tier: 'Essential' });
-      setShowAddForm(false);
-      fetchProjects();
+    try {
+      const { error } = await supabase.from('projects').insert([formData]);
+      if (!error) {
+        setFormData({ name: '', website_link: '', business_type: '', pricing_tier: 'Essential' });
+        setShowAddForm(false);
+        fetchProjects();
+      }
+    } catch {
+      // Silently fail
     }
   }
 
   async function togglePin(project: Project) {
-    const { error } = await supabase
-      .from('projects')
-      .update({ pinned: !project.pinned })
-      .eq('id', project.id);
-    if (!error) fetchProjects();
+    try {
+      const { error } = await supabase
+        .from('projects')
+        .update({ pinned: !project.pinned })
+        .eq('id', project.id);
+      if (!error) fetchProjects();
+    } catch {
+      // Silently fail
+    }
   }
 
   async function deleteProject(id: string) {
-    const { error } = await supabase.from('projects').delete().eq('id', id);
-    if (!error) fetchProjects();
+    try {
+      const { error } = await supabase.from('projects').delete().eq('id', id);
+      if (!error) fetchProjects();
+    } catch {
+      // Silently fail
+    }
   }
 
   if (!authenticated) {
